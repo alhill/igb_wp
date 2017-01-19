@@ -866,7 +866,7 @@ position: relative;
 		  if(!isset($cat_color->color)) { $cat_color = new stdClass; $cat_color->color=$bg_top;};
           echo '<table class="last_table" style="overflow:hidden;height:' . $event_table_height . 'px;border-spacing:0;width: 100%;background-color:' . $table_color . ' !important;">
                   <tr>
-                    <td style="font-size:' . $event_num_font_size . 'px;font-weight:bold;width:15px;text-align:center;background-color: #' . str_replace('#','',$cat_color->color) . ' !important;color:' . $event_num_color . '">' . (($show_numbers_for_events) ? ($j + 1) : '') . '</td>
+                    <td style="font-size:' . $event_num_font_size . 'px;font-weight:bold;width:15px;text-align:center;background-color: #' . str_replace('#','',$cat_color->color) . ' !important;color:' . $event_num_color . '">' . "" . '</td>
                     <td>
                       <a class="thickbox-previewbigcalendar' . $many_sp_calendar . '" style="text-decoration:none;font-size:13px;background:none;color:' . $event_title_color . ';"
                         href="' . add_query_arg(array(

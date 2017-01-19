@@ -313,14 +313,14 @@ $cat_ids = substr($cat_ids, 0,-1);
           if ($rows[$i - 1]->text_for_date != "")
             $array_days1[$key] = $date_day;
           $c = $title_num[$date_day];
-          $list = '<p>' . (($show_numbers_for_events and $day_start) ? '' . (($show_numbers_for_events) ? '<b>' . $c . '.</b>&nbsp;&nbsp;' : '') : '');
+          $list = '<p>';
 		  
 		  
           if ($rows[$i - 1]->time and $show_time != 0) {
-            $list .= '&nbsp;' . $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
+            $list .= $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
           }
           else {
-            $list .= '&nbsp;' . $rows[$i - 1]->title . '</p>';
+            $list .= $rows[$i - 1]->title . '</p>';
           }
           $title[$date_day] = $title[$date_day] . $list;
           $ev_ids[$date_day] = $ev_ids[$date_day] . $rows[$i - 1]->id . '<br>';
@@ -334,12 +334,12 @@ $cat_ids = substr($cat_ids, 0,-1);
           $title_num[$date_day] = 1;
           $c = 1;
 		  
-          $list = '<p>' . (($show_numbers_for_events and $day_start) ? '<b>' . $c . '.</b>&nbsp;&nbsp;' : '');
+          $list = '<p>';
           if ($rows[$i - 1]->time and $show_time != 0) {
-            $list .= '&nbsp;' . $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
+            $list .= $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
           }
           else {
-            $list .= '&nbsp;' . $rows[$i - 1]->title . '</p>';
+            $list .= $rows[$i - 1]->title . '</p>';
           }
           $title[$date_day] = $list;
           $ev_ids[$date_day] = $rows[$i - 1]->id . '<br>';
@@ -360,12 +360,12 @@ $cat_ids = substr($cat_ids, 0,-1);
               $array_days1[$key] = $j;
             }
             $c = $title_num[$j];
-            $list = '<p>' . (($show_numbers_for_events and $day_start) ? '<b>' . $c . '.</b>&nbsp;&nbsp;' : '');
+            $list = '<p>';
             if ($rows[$i - 1]->time and $show_time != 0) {
-              $list .= '&nbsp;' . $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
+              $list .= $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
             }
             else {
-              $list .= '&nbsp;' . $rows[$i - 1]->title . '</p>';
+              $list .= $rows[$i - 1]->title . '</p>';
             }
             $title[$j] = $title[$j] . $list;
             $ev_ids[$j] = $ev_ids[$j] . $rows[$i - 1]->id . '<br>';
@@ -378,12 +378,12 @@ $cat_ids = substr($cat_ids, 0,-1);
             }
             $title_num[$j] = 1;
             $c = 1;
-            $list = '<p>' . (($show_numbers_for_events and $day_start) ? '<b>' . $c . '.</b>&nbsp;&nbsp;' : '');
+            $list = '<p>';
             if ($rows[$i - 1]->time and $show_time != 0) {
-              $list .= '&nbsp;' . $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
+              $list .= $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
             }
             else {
-              $list .= '&nbsp;' . $rows[$i - 1]->title . '</p>';
+              $list .= $rows[$i - 1]->title . '</p>';
             }
             $title[$j] = $list;
             $ev_ids[$j] = $rows[$i - 1]->id . '<br>';
@@ -404,12 +404,12 @@ $cat_ids = substr($cat_ids, 0,-1);
               $array_days1[$key] = $j;
             }
             $c = $title_num[$j];
-            $list = '<p>' . (($show_numbers_for_events and $day_start) ? '<b>' . $c . '.</b>&nbsp;&nbsp;' : '');
+            $list = '<p>';
             if ($rows[$i - 1]->time and $show_time != 0) {
-              $list .= '&nbsp;' . $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
+              $list .= $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
             }
             else {
-              $list .= '&nbsp;' . $rows[$i - 1]->title . '</p>';
+              $list .= $rows[$i - 1]->title . '</p>';
             }
             $title[$j] = $title[$j] . $list;
             $ev_ids[$j] = $ev_ids[$j] . $rows[$i - 1]->id . '<br>';
@@ -422,12 +422,12 @@ $cat_ids = substr($cat_ids, 0,-1);
             }
             $title_num[$j] = 1;
             $c = 1;
-            $list = '<p>' . (($show_numbers_for_events and $day_start) ? '<b>' . $c . '.</b>&nbsp;&nbsp;' : '');
+            $list = '<p>';
             if ($rows[$i - 1]->time and $show_time != 0) {
-              $list .= '&nbsp;' . $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
+              $list .= $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
             }
             else {
-              $list .= '&nbsp;' . $rows[$i - 1]->title . '</p>';
+              $list .= $rows[$i - 1]->title . '</p>';
             }
             $title[$j] = $list;
             $ev_ids[$j] = $rows[$i - 1]->id . '<br>';
@@ -448,12 +448,12 @@ $cat_ids = substr($cat_ids, 0,-1);
               $array_days1[$key] = $j;
             }
             $c = $title_num[$j];
-            $list = '<p>' . (($show_numbers_for_events and $day_start) ? '<b>' . $c . '.</b>&nbsp;&nbsp;' : '');
+            $list = '<p>';
             if ($rows[$i - 1]->time and $show_time != 0) {
-              $list .= '&nbsp;' . $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
+              $list .= $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
             }
             else {
-              $list .= '&nbsp;' . $rows[$i - 1]->title . '</p>';
+              $list .= $rows[$i - 1]->title . '</p>';
             }
             $title[$j] = $title[$j] . $list;
             $ev_ids[$j] = $ev_ids[$j] . $rows[$i - 1]->id . '<br>';
@@ -466,12 +466,12 @@ $cat_ids = substr($cat_ids, 0,-1);
             }
             $title_num[$j] = 1;
             $c = 1;
-            $list = '<p>' . (($show_numbers_for_events and $day_start) ? '<b>' . $c . '.</b>&nbsp;&nbsp;' : '');
+            $list = '<p>';
             if ($rows[$i - 1]->time and $show_time != 0) {
-              $list .= '&nbsp;' . $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
+              $list .= $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
             }
             else {
-              $list .= '&nbsp;' . $rows[$i - 1]->title . '</p>';
+              $list .= $rows[$i - 1]->title . '</p>';
             }
             $title[$j] = $list;
             $ev_ids[$j] = $rows[$i - 1]->id . '<br>';
@@ -491,12 +491,12 @@ $cat_ids = substr($cat_ids, 0,-1);
             if ($rows[$i - 1]->text_for_date != "")
               $array_days1[$key] = $j;
             $c = $title_num[$j];
-            $list = '<p>' . (($show_numbers_for_events and $day_start) ? '<b>' . $c . '.</b>&nbsp;&nbsp;' : '');
+            $list = '<p>';
             if ($rows[$i - 1]->time and $show_time != 0) {
-              $list .= '&nbsp;' . $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
+              $list .= $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
             }
             else {
-              $list .= '&nbsp;' . $rows[$i - 1]->title . '</p>';
+              $list .= $rows[$i - 1]->title . '</p>';
             }
             $title[$j] = $title[$j] . $list;
             $ev_ids[$j] = $ev_ids[$j] . $rows[$i - 1]->id . '<br>';
@@ -509,12 +509,12 @@ $cat_ids = substr($cat_ids, 0,-1);
             }
             $title_num[$j] = 1;
             $c = 1;
-            $list = '<p>' . (($show_numbers_for_events and $day_start) ? '<b>' . $c . '.</b>&nbsp;&nbsp;' : '');
+            $list = '<p>';
             if ($rows[$i - 1]->time and $show_time != 0) {
-              $list .= '&nbsp;' . $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
+              $list .= $rows[$i - 1]->title . '<br>(' . $rows[$i - 1]->time . ')</p>';
             }
             else {
-              $list .= '&nbsp;' . $rows[$i - 1]->title . '</p>';
+              $list .= $rows[$i - 1]->title . '</p>';
             }
             $title[$j] = $list;
             $ev_ids[$j] = $rows[$i - 1]->id . '<br>';

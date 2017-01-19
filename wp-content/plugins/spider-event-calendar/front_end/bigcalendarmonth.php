@@ -6,7 +6,7 @@ function big_calendar_month() {
   $many_sp_calendar = ((isset($_GET['many_sp_calendar']) && is_numeric(esc_html($_GET['many_sp_calendar']))) ? esc_html($_GET['many_sp_calendar']) : 1);
   $calendar_id = (isset($_GET['calendar']) ? (int) $_GET['calendar'] : '');
   $theme_id = (isset($_GET['theme_id']) ? (int) $_GET['theme_id'] : 30);
-  $cat_id = (isset($_GET['cat_id']) ? esc_html($_GET['cat_id']) : '');
+  $cat_id = "";
   $cat_ids = (isset($_GET['cat_ids']) ? esc_html($_GET['cat_ids']) : '');
   $date = ((isset($_GET['date']) && IsDate_inputed(esc_html($_GET['date']))) ? esc_html($_GET['date']) : '');
   $view_select = (isset($_GET['select']) ? esc_html($_GET['select']) : 'month,');
@@ -877,7 +877,7 @@ function style($title, $color,$ev_height){
 	$first_letter =$new_title[1];
 	$ev_title =  $title;
 	$color=str_replace('#','',$color);
-	$event='<div id="cal_event"  style="padding-left: 5px; background-color: '.hex_to_rgb($color,'0.5').' !important;"><p class="ev_name">'.$ev_title.'</p></div>';
+	$event='<div id="cal_event"  style="padding-left: 5px; background-color: '.hex_to_rgb($color,'0.5').' !important;"><p class="ev_names">'.$ev_title.'</p></div>';
 	
 	return $event;
 }

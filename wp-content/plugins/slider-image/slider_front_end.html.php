@@ -975,7 +975,7 @@ if ($hasyoutube){?>
 		  left:0;
 	}
 	.entry-content a{
-		border-bottom: none !important;
+		/* POR QUÉ ESTABA PUESTO ESTO?!? border-bottom: none !important; */
 	}
 	.play-button-slider{
 		top: 0;

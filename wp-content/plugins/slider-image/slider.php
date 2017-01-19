@@ -983,8 +983,8 @@ function hugeit_slider_add_style_to_header( $id ) {
 			border-color: #<?php echo $paramssld['slider_title_border_color']; ?>;
 			border-radius: <?php echo $paramssld['slider_title_border_radius']; ?>px;
 		}
-
-		.huge_it_slideshow_description_text_<?php echo $sliderID; ?> {
+            
+        .huge_it_slideshow_description_text_<?php echo $sliderID; ?> {
 			text-decoration: none;
 			position: absolute;
 			z-index: 11;
@@ -993,14 +993,14 @@ function hugeit_slider_add_style_to_header( $id ) {
 		<?php  if($paramssld['slider_description_has_margin']=='on'){
 				$slider_description_width=($paramssld['slider_description_width']-6);
 				$slider_description_height=($paramssld['slider_description_height']-6);
-				$slider_description_margin="3";
+				$slider_description_margin="0";
 			}else{
 				$slider_description_width=($paramssld['slider_description_width']);
 				$slider_descriptione_height=($paramssld['slider_description_height']);
 				$slider_description_margin="0";
 			}  ?>
 
-			width:<?php echo $slider_description_width; ?>%;
+			width:100%;
 			/*height:<?php echo $slider_description_height; ?>%;*/
 		<?php
 			if($slideshow_description_position[0]=="left"){echo 'left:'.$slider_description_margin.'%;';}
@@ -1013,15 +1013,11 @@ function hugeit_slider_add_style_to_header( $id ) {
 		 ?>
 			padding:3%;
 			text-align:<?php echo $paramssld['slider_description_text_align']; ?>;
-			color:#<?php echo $paramssld['slider_description_color']; ?>;
-
-			background:<?php
-			list($r,$g,$b) = array_map('hexdec',str_split($paramssld['slider_description_background_color'],2));
-			$descriptionopacity=$paramssld["slider_description_background_transparency"]/100;
-			echo 'rgba('.$r.','.$g.','.$b.','.$descriptionopacity.') !important';
+			color:white;
+			background:RGBA(60,154,130, 0.6);
 		?>;
 			border-style:solid;
-			font-size:<?php echo $paramssld['slider_description_font_size']; ?>px;
+			font-size:1em;
 			border-width:<?php echo $paramssld['slider_description_border_size']; ?>px;
 			border-color:#<?php echo $paramssld['slider_description_border_color']; ?>;
 			border-radius:<?php echo $paramssld['slider_description_border_radius']; ?>px;

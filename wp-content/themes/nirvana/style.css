@@ -889,7 +889,7 @@ body.nirvana-topbarfixed.admin-bar #topbar { top: 32px; }
 .entry-content h5,
 .entry-content h6 {
 	line-height: 1.5em;
-	margin: 20px 0 0;
+	margin: 0;
 }
 
 #content table {
@@ -1395,7 +1395,7 @@ span.edit-link {
 -------------------------------------------------------------- */
 #pp-afterslider img,
 #content img {
-	margin: 0;
+	/* margin: 0; COMENTADA PARA QUITAR EL BORDECITO FANTASMA DE LOS THUMBNAILS*/
 	height: auto;
 	max-width: 100%;
 	box-sizing: border-box;
@@ -3552,6 +3552,7 @@ body.woocommerce-page .entry-content .checkout ul > li, .woocommerce #payment ul
    .woocommerce-page #payment ul.payment_methods li { list-style: none; }
 body.woocommerce .page-title { display: inherit; margin-bottom: 20px; padding: 10px; }
 
+/* MODIFICACIONES EN EL SLIDER */
 .huge_it_slideshow_image_container_1{
     border: 1px solid transparent;
     border-radius: 8px;
@@ -3560,10 +3561,17 @@ body.woocommerce .page-title { display: inherit; margin-bottom: 20px; padding: 1
 border: 1px solid #1EC8BB;
 border-radius: 8px;    
 }
+.huge_it_slideshow_description_text_1{
+    background-color: red;
+}
+/* FIN MODIFICACIONES EN EL SLIDER */
+
+
 .product img{
 border: 1px solid #1EC8BB;
 border-radius: 8px;    
 }
+
 
 /* MODIFICACIONES EN EL CALENDARIO */
 #views_tabs, #views_tabs_select{
@@ -3576,6 +3584,46 @@ border-radius: 8px;
     line-height: 2;
 }
 /* FIN MODIFICACIONES EN EL CALENDARIO */
+/* MODIFICACIONES DEL BLOQUE SOBRE LOS RESÚMENES DE LOS ARTÍCULOS */
+.cabecera{
+    margin: 0 auto;
+}
+.cabecera_slider{
+    float: left;
+    margin: 0 2em 0 1em;
+    display:inline-block;
+}
+.cabecera_calendario{
+    display:inline-block;
+}
+#pp-texttop{
+    padding: 4em 0 0 0;
+    margin: 0 0 -4em 0;
+}
+/* FIN MODIFICACIONES DEL BLOQUE SOBRE LOS RESÚMENES DE LOS ARTÍCULOS */
+/* MODIFICACIONES EN EL CUERPO DE LA HOME */
+article .borde{
+    display: table-cell;
+    border: 1px solid #1EC8BB;
+    border-radius: 8px;
+    margin: 0 2em 0 0;
+    float: left;
+}
+article .bordesinborde{
+    display: table-cell;
+    margin: 0 2em 0 0;
+    float: left;
+}
+article .borde img{
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin-bottom: -9px; /* Hay una línea comentada en 1398 sin la que esto no funciona */
+}
+article h2{
+    margin: 0 0 0 0; /*esta linea no hace nada -> .entry content h2 -> linea 885 */
+}
 
 
+
+/* FIN MODIFICACIONES EN EL CUERPO DE LA HOME */
 /* FIN! */

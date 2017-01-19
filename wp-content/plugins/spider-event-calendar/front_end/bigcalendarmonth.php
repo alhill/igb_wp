@@ -844,7 +844,7 @@ echo '<style>
   echo '          <tr id="days"  height="' . $cell_height . '" style="line-height:15px;">';
   for ($i = 1; $i < $weekday_i; $i++) {
     echo '          <td class="caltext_color_other_months" style="background-color:' . $bg_color_other_months . ' !important">
-                      <p style="padding-right: 7px; font-size:' . $other_days_font_size . 'px; font-weight: 600;line-height:1.4;font-family: Segoe UI;padding-left: 5px;background: '.$date_bgcolor.' !important; width: 100%; padding-right: 6px;">' . $last_month_days . '</p>
+                      <p style="padding-right: 7px; font-size:' . $other_days_font_size . 'px; font-weight: 600;line-height:2;font-family: Segoe UI;padding-left: 5px;background: '.$date_bgcolor.' !important; width: 100%; padding-right: 6px;">' . $last_month_days . '</p>
                     </td>';
     $last_month_days = $last_month_days + 1;
   }
@@ -917,7 +917,7 @@ function evented_days($r, $number_of_shown_evetns, $ev_id, $i,$evented_color_bg,
       if ($i == $day_REFERER and $month == $month_REFERER and $year == $year_REFERER ) {
         echo '      <td class="cala_day" style="padding:0; margin:0;line-height:15px;" id="event_td_'.$i.'">
                       <div class="calborder_day" style=" margin:0; padding:0;">
-                        <p style="font-size:' . $other_days_font_size . 'px; font-weight: 600; color:' . $evented_color . ';line-height:1.4;font-family: Segoe UI; background: '.$date_bgcolor.';">' . $i . '</p>';
+                        <p style="font-size:' . $other_days_font_size . 'px; font-weight: 600; color:' . $evented_color . ';line-height:2;font-family: Segoe UI; background: '.$date_bgcolor.';">' . $i . '</p>';
         $r = 0;
         echo '          <div style="background-color:' . $ev_title_bg_color . ' !important;">';
         for ($j = 0; $j < $k; $j++) {
@@ -982,7 +982,7 @@ function evented_days($r, $number_of_shown_evetns, $ev_id, $i,$evented_color_bg,
                 if ($i == date('j') and $month == date('F') and $year == date('Y')) { $border_day = $current_day_border_color;}
         if (in_array($i,$array_days)) {
           echo '      <td class="cala_day" style="background-color:' . $ev_title_bg_color . ' !important;overflow: hidden; padding:0; margin:0;line-height:15px; border: 2px solid ' . $current_day_border_color . ' !important" id="event_td_'.$i.'">
-                        <p style="background-color:' . $evented_color_bg . ' !important;color:' . $evented_color . ' !important;font-size:' . $other_days_font_size . 'px; font-weight: 600;line-height:1.4;font-family: Segoe UI;padding-left: 5px;background: '.$date_bgcolor.' !important; width: 100%; padding-right: 6px;">' . $i . '</p>';
+                        <p style="background-color:' . $evented_color_bg . ' !important;color:' . $evented_color . ' !important;font-size:' . $other_days_font_size . 'px; font-weight: 600;line-height:2;font-family: Segoe UI;padding-left: 5px;background: '.$date_bgcolor.' !important; width: 100%; padding-right: 6px;">' . $i . '</p>';
           $r = 0;
           echo '        <div style="background-color:' . $ev_title_bg_color . ' !important">';
           for ($j = 0; $j < $k; $j++) {
@@ -1041,7 +1041,7 @@ function evented_days($r, $number_of_shown_evetns, $ev_id, $i,$evented_color_bg,
         }
         else {
 
-          echo '      <td class="calsun_days" style="overflow: hidden; padding:0; font-size:' . $sundays_font_size . 'px; margin:0;line-height:1.4;font-family: Segoe UI;padding-left: 5px; border: 2px solid ' . $current_day_border_color . ' !important">
+          echo '      <td class="calsun_days" style="overflow: hidden; padding:0; font-size:' . $sundays_font_size . 'px; margin:0;line-height:2;font-family: Segoe UI;padding-left: 5px; border: 2px solid ' . $current_day_border_color . ' !important">
                         <b>' . $i . '</b>
                       </td>';
         }
@@ -1050,7 +1050,7 @@ function evented_days($r, $number_of_shown_evetns, $ev_id, $i,$evented_color_bg,
 	  
 	  if (in_array($i, $array_days)) {
         echo '        <td class="cala_day" style="background-color:' . $ev_title_bg_color . ' !important;padding:0; margin:0;line-height:15px;" id="event_td_'.$i.'">
-                        <p style="background-color:' . $evented_color_bg . ' !important;color:' . $evented_color . ';font-size:' . $other_days_font_size . 'px; font-weight: 600;line-height:1.4;font-family: Segoe UI;padding-left: 5px;background: '.$date_bgcolor.' !important; padding-right: 6px;">' . $i . '</p>
+                        <p style="background-color:' . $evented_color_bg . ' !important;color:' . $evented_color . ';font-size:' . $other_days_font_size . 'px; font-weight: 600;line-height:2;font-family: Segoe UI;padding-left: 5px;background: '.$date_bgcolor.' !important; padding-right: 6px;">' . $i . '</p>
                         <div>';
         $r = 0;
         for ($j = 0; $j < $k; $j++) {
@@ -1107,7 +1107,7 @@ function evented_days($r, $number_of_shown_evetns, $ev_id, $i,$evented_color_bg,
                       </td>';
 			}
       else {
-        echo '        <td class="calsun_days" style="padding:0; margin:0;line-height:1.4;font-family: Segoe UI; font-size:' . $sundays_font_size . 'px">
+        echo '        <td class="calsun_days" style="padding:0; margin:0;line-height:2;font-family: Segoe UI; font-size:' . $sundays_font_size . 'px">
                         <p style="background: '.$date_bgcolor.'; padding-left: 5px; padding-right: 6px; ">' . $i . '</p>
                       </td>';
       }
@@ -1118,7 +1118,7 @@ function evented_days($r, $number_of_shown_evetns, $ev_id, $i,$evented_color_bg,
 	
 			echo '          <td bgcolor="' . $ev_title_bg_color . '" class="cala_day" style="overflow: hidden; border: 2px solid ' . $current_day_border_color . ' !important;padding:0; margin:0;line-height:15px;" id="event_td_'.$i.'">
                         <div class="calborder_day" style="margin:0; padding:0;">
-                          <p style="background-color:' . $evented_color_bg . ' !important;color:' . $evented_color . ' !important;font-size:' . $other_days_font_size . 'px; font-weight: 600;line-height:1.4;font-family: Segoe UI;padding-left: 5px;background: '.$date_bgcolor.' !important; width: 100%; padding-left: 5px; padding-right: 6px;">' . $i . '</p>
+                          <p style="background-color:' . $evented_color_bg . ' !important;color:' . $evented_color . ' !important;font-size:' . $other_days_font_size . 'px; font-weight: 600;line-height:2;font-family: Segoe UI;padding-left: 5px;background: '.$date_bgcolor.' !important; width: 100%; padding-left: 5px; padding-right: 6px;">' . $i . '</p>
                           <div style="background-color:' . $ev_title_bg_color . ' !important">';
       $r = 0;
 			for ($j = 0; $j < $k; $j++) {
@@ -1182,7 +1182,7 @@ function evented_days($r, $number_of_shown_evetns, $ev_id, $i,$evented_color_bg,
 		
           if (in_array ($i,$array_days)) {
             echo  '   <td class="cala_day" style="background-color:' . $ev_title_bg_color . ' !important;overflow: hidden; padding:0; margin:0;line-height:15px; border: 2px solid ' . $current_day_border_color . ' !important;" id="event_td_'.$i.'">
-                        <p style="background-color:' . $evented_color_bg . ' !important;color:' . $evented_color . ';font-size:' . $other_days_font_size . 'px; font-weight: 600;line-height:1.4;font-family: Segoe UI;padding-left: 5px;background: '.$date_bgcolor.' !important; width: 100%; padding-right: 6px;">' . $i . '</p>
+                        <p style="background-color:' . $evented_color_bg . ' !important;color:' . $evented_color . ';font-size:' . $other_days_font_size . 'px; font-weight: 600;line-height:2;font-family: Segoe UI;padding-left: 5px;background: '.$date_bgcolor.' !important; width: 100%; padding-right: 6px;">' . $i . '</p>
                         <div style="background-color:' . $ev_title_bg_color . ' !important">';
             $r = 0;
             for ($j = 0; $j < $k; $j++) {
@@ -1241,7 +1241,7 @@ function evented_days($r, $number_of_shown_evetns, $ev_id, $i,$evented_color_bg,
           }
           else {
             echo '    <td style="overflow: hidden; color:' . $text_color_this_month_unevented . ';padding:0; margin:0; line-height:15px; border: 2px solid ' . $current_day_border_color . ' !important; vertical-align:top;">
-                        <p style="font-size:'.$other_days_font_size.'px; font-weight: 600;line-height:1.4;font-family: Segoe UI;padding-left: 5px; background: '.$date_bgcolor.';">' . $i . '</p>
+                        <p style="font-size:'.$other_days_font_size.'px; font-weight: 600;line-height:2;font-family: Segoe UI;padding-left: 5px; background: '.$date_bgcolor.';">' . $i . '</p>
                       </td>';
           }
         }
@@ -1249,7 +1249,7 @@ function evented_days($r, $number_of_shown_evetns, $ev_id, $i,$evented_color_bg,
 		
 if (in_array($i, $array_days)) {
           echo '      <td class="cala_day" style="background-color:' . $ev_title_bg_color . ' !important;padding:0; margin:0;line-height:15px;" id="event_td_'.$i.'">
-                        <p style="color:' . $evented_color . ' !important;font-size:' . $other_days_font_size . 'px; font-weight: 600;line-height:1.4; padding-left: 5px; font-family: Segoe UI;padding-left: 5px; background: '.$date_bgcolor.' !important;">' . $i . '</p>';
+                        <p style="color:' . $evented_color . ' !important;font-size:' . $other_days_font_size . 'px; font-weight: 600;line-height:2; padding-left: 5px; font-family: Segoe UI;padding-left: 5px; background: '.$date_bgcolor.' !important;">' . $i . '</p>';
           $r = 0;
           echo ' <div class="events_div">';
 		  
@@ -1309,7 +1309,7 @@ if (in_array($i, $array_days)) {
 			}
 			else {
         echo '        <td style=" color:' . $text_color_this_month_unevented . ';padding:0; margin:0; line-height:15px;border-bottom: 1px solid ' . $cell_border_color . ' !important; border-left: 1px solid ' . $cell_border_color . ' !important;vertical-align:top;">
-                        <p style="font-size:' . $other_days_font_size . 'px; font-weight: 600;line-height:1.4;font-family: Segoe UI; padding-left: 5px; background: '.$date_bgcolor.';">' . $i . '</p>
+                        <p style="font-size:' . $other_days_font_size . 'px; font-weight: 600;line-height:2;font-family: Segoe UI; padding-left: 5px; background: '.$date_bgcolor.';">' . $i . '</p>
                       </td>';
       }
     }

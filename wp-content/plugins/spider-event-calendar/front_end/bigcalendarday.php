@@ -152,7 +152,7 @@ $theme = $wpdb->get_row($wpdb->prepare('SELECT * FROM ' . $wpdb->prefix . 'spide
   $event_num_color = '#' . str_replace('#','',$theme->event_num_color);
   $date_font_size = $theme->date_font_size;
   $event_num_font_size = $theme->event_num_font_size;
-  $show_numbers_for_events = "";
+  $show_numbers_for_events = $theme->day_start;
   $show_event_bgcolor = '#' . str_replace('#','',$theme->show_event_bgcolor);
 
   __('January', 'sp_calendar');

@@ -6,7 +6,7 @@ function big_calendar_month() {
   $many_sp_calendar = ((isset($_GET['many_sp_calendar']) && is_numeric(esc_html($_GET['many_sp_calendar']))) ? esc_html($_GET['many_sp_calendar']) : 1);
   $calendar_id = (isset($_GET['calendar']) ? (int) $_GET['calendar'] : '');
   $theme_id = (isset($_GET['theme_id']) ? (int) $_GET['theme_id'] : 30);
-  $cat_id = "";
+  $cat_id = (isset($_GET['cat_id']) ? esc_html($_GET['cat_id']) : '');
   $cat_ids = (isset($_GET['cat_ids']) ? esc_html($_GET['cat_ids']) : '');
   $date = ((isset($_GET['date']) && IsDate_inputed(esc_html($_GET['date']))) ? esc_html($_GET['date']) : '');
   $view_select = (isset($_GET['select']) ? esc_html($_GET['select']) : 'month,');

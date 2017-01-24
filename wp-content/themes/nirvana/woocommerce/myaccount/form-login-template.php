@@ -34,9 +34,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php endif; ?>
 
-		<h4><?php _e( 'Login', 'woocommerce' ); ?></h4>
+		<h2><?php _e( 'Login', 'woocommerce' ); ?></h2>
 
-		<form method="post" class="login" style="margin-top: 1em;">
+		<form method="post" class="login">
 
 			<?php do_action( 'woocommerce_login_form_start' ); ?>
 
@@ -72,9 +72,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<div class="u-column2 col-2">
 
-		<h4><?php _e( 'Register', 'woocommerce' ); ?></h4>
+		<h2><?php _e( 'Register', 'woocommerce' ); ?></h2>
 
-		<form method="post" class="register" style="margin-top: 1em;">
+		<form method="post" class="register">
 
 			<?php do_action( 'woocommerce_register_form_start' ); ?>
 
@@ -109,7 +109,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<p class="woocomerce-FormRow form-row">
 				<?php wp_nonce_field( 'woocommerce-register', 'woocommerce-register-nonce' ); ?>
-                
 				<input type="submit" class="woocommerce-Button button" name="register" value="<?php esc_attr_e( 'Register', 'woocommerce' ); ?>" />
 			</p>
 

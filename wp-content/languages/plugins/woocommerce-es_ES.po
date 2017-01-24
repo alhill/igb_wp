@@ -4552,7 +4552,7 @@ msgstr "Anti-spam"
 
 #: templates/myaccount/form-login.php:75 templates/myaccount/form-login.php:112
 msgid "Register"
-msgstr "Registrar"
+msgstr "Nuevo usuario"
 
 #: templates/myaccount/form-edit-address.php:46
 msgid "Save Address"
